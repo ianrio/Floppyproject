@@ -1,0 +1,93 @@
+:root{
+    --red: rgb(185, 9, 9);
+}
+
+h3 {
+    margin: 0;
+    color: rgb(94, 4, 4);
+    font-weight: bold;
+    font-size: 25px; /* <---Mala práctica Ian*/
+    
+}
+.main-container {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightcoral;
+}
+
+.floppy-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 650px;
+    grid-template-rows: 50% 50%;
+    justify-items: center;
+    background-color: rgb(0, 0, 0, 90%);
+    border: 5px solid;
+    grid-gap: 50px;
+    border-radius: 10px;
+}
+
+.rect-top {
+    width: 400px;
+    height: 230px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(207,213,209,1) 35%, rgba(114,117,117,1) 100%); 
+    /* border-bottom: 3px solid;
+    border-left: 3px solid;
+    border-right: 3px solid; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.black-rect {
+    width: 100px;
+    height: 73%;
+    background-color: black;
+    margin-right: 60px;
+    margin-top: 15px;
+}
+
+.rect-bottom {
+    width: 500px;
+    height: 350px;
+    background-color: var(--red);
+    border: 3px solid var(--red);
+}
+
+.notes{
+    width: 500px;
+    height: 320px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: repeat(1fr);
+
+}
+.linea{
+    border-color: var(--red);
+    border: 1px solid var(--red);
+
+}
+
+.linea:first-of-type {
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    padding-left: 15px;
+}
+
+.rect-white{
+    position: absolute;
+    bottom: 50px;
+    right: 15px;
+    width: 35px;
+    height: 25px;
+    background-color: white;
+    border-radius: 3px;
+}
